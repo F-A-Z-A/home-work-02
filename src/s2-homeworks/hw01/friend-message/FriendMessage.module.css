@@ -8,7 +8,7 @@
 .friendImageAndText {
   display: flex;
   align-items: flex-end;
-  gap: 10px;
+  /*gap: 10px;*/
 }
 
 .friendImageAndText img {
@@ -17,11 +17,18 @@
 }
 
 .friendText {
-  max-width: 527px;
+  max-width: 510px;
   background-color: #F5F7FB;
-  border-radius: 10px;
+  border-radius: 10px 10px 10px 0;
   padding: 10px;
 }
+
+.angle {
+  width: 16px;
+  height: 16px;
+  background: linear-gradient(315deg, rgba(245, 247, 251, 1) 0%, rgba(245, 247, 251, 1) 50%, rgba(255, 255, 255, 1) 50%);
+}
+
 
 .friendText:after {
 
