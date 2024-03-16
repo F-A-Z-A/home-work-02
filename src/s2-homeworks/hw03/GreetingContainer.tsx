@@ -22,9 +22,10 @@ export const pureAddUser = (name: string,
     addUserCallback(name.trim())
     // и очистить инпут засетав ''
     setName("")
+  } else {
+    // если имя пустое - показать ошибку: setError('Ошибка! Введите имя!'),
+    setError("Ошибка! Введите имя!")
   }
-  // если имя пустое - показать ошибку: setError('Ошибка! Введите имя!'),
-  setError('Ошибка! Введите имя!')
   // ЕСЛИ НЕ БУДЕТ ПОЛУЧАТЬСЯ, НЕ РАССТРАИВАЙСЯ. НА ЧЕТВЕРТОМ ЗАНЯТИИ ПО ТУДУЛИСТУ НАУЧИМ), НО ВСЕ ТАКИ ПОПЫТАЙСЯ))
 }
 
@@ -40,7 +41,7 @@ export const pureOnEnter = (
   e: KeyboardEvent<HTMLInputElement>,
   addUser: () => void
 ) => {
-  if (e.keyCode === 13) {
+  if (e.key === "Enter") {
     addUser()
   }
 }
