@@ -1,4 +1,5 @@
 .input:focus {
+  outline: none;
   background-color: rgba(214, 248, 255, 0.5);
 }
 
