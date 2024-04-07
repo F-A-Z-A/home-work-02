@@ -22,20 +22,24 @@
 }
 
 .default {
+  border: 2px solid #0066CC;
   background-color: #0066CC;
   color: #FFFFFF;
 }
 
 .red {
+  border: 2px solid #CC1439;
   background-color: #CC1439;
   color: #FFFFFF;
 }
 
 .default:hover {
+  border: 2px solid #0080FF;
   background-color: #0080FF;
 }
 
 .red:hover {
+  border: 2px solid #FF1A47;
   background-color: #FF1A47;
 }
 
@@ -44,6 +48,7 @@
 }
 
 .default:active {
+  border: 2px solid #0059B2;
   background-color: #0059B2;
 }
 
@@ -52,10 +57,12 @@
 }
 
 .red:active {
+  border: 2px solid #B21232;
   background-color: #B21232;
 }
 
 .button:disabled {
+  border: 2px solid #004D99;
   background-color: #004D99;
   color: #002E5C;
   cursor: default;
