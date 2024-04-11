@@ -1,9 +1,19 @@
 .select {
+  min-width: 180px;
+  min-height: 25px;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0 0 0 6px;
+
 }
 
 .select:focus {
+
 }
 
-
 .option:hover {
+  /*background-color: #1E90FF;*/
+  background-color: red;
+  color: #fff;
 }
