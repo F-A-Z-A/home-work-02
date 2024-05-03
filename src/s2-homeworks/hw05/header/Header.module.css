@@ -12,6 +12,7 @@
 }
 
 .burgerMenuIcon {
+  cursor: pointer;
 }
 
 .header h1 {
