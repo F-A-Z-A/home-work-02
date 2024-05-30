@@ -1,5 +1,3 @@
-export type IsLoadingStateType = { isLoading: boolean }
-
 const initState = {isLoading: false}
 
 export const loadingReducer = (state = initState, action: LoadingActionType): IsLoadingStateType => {
@@ -11,10 +9,13 @@ export const loadingReducer = (state = initState, action: LoadingActionType): Is
   }
 }
 
-type LoadingActionType = ReturnType<typeof loadingAC>
-
+// actions
 export const loadingAC = (isLoading: boolean) =>
   ({type: 'CHANGE_LOADING', isLoading} as const)
+
+// types
+type LoadingActionType = ReturnType<typeof loadingAC>
+export type IsLoadingStateType = typeof initState
 
 
 // const initState = {
