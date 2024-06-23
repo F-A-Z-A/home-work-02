@@ -16,6 +16,7 @@ const HW13 = () => {
 	const [isLoading, setIsLoading] = useState(false)
 	
 	const send = (x?: boolean | null) => () => {
+		
 		const url = (x === null)
 			? 'https://xxxxxx.ccc' // имитация запроса на не корректный адрес
 			: 'https://samurai.it-incubator.io/api/3.0/homework/test'
