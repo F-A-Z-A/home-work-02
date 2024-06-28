@@ -30,14 +30,12 @@ const HW13 = () => {
 		axios
 			.post(url, {success: x})
 			.then((res) => {
-				console.log(res)
 				setCode('Код 200!')
 				setImage(success200)
 				setText(res.data.errorText)
 				setInfo(res.data.info)
 			})
 			.catch((e) => {
-				console.log(e)
 				if (e.response.status) {
 					if (e.response.status === 500) {
 						setCode('Ошибка 500!')
@@ -62,7 +60,7 @@ const HW13 = () => {
 	
 	return (
 		<div id={'hw13'}>
-			<div className={s2.hwTitle}>Homework #13</div>
+			<div className={s2.hwTitle}>Hometask № 13</div>
 			
 			<div className={s2.hw}>
 				<div className={s.buttonsContainer}>
